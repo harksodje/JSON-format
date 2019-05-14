@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="nav" style="width:100%;">
+  <img src="image/" alt="sed">
+</div>
+
+  <div class="container">
+    <table id="T" class="table table-striped">
+    
+    </table>
+   </div>  
+ <script>
+   var  SC = [ 
+    {"state":"Abia","capital":"Umuaiah" },
+    {"state":"Adamawa","capital":"Yola" }, 
+    {"state":"Akwa Ibom","capital":"Uyo" }, 
+    {"state":"Anambra","capital":"Awka" },
+    {"state":"Bauchi","capital":"Bauchi" },
+    {"state":"Bayelsa","capital":"Yenagoa" }, 
+    {"state":"Benue","capital":"Makurdi" },
+    {"state":"Borno","capital":"Maiduguri" }, +
+    {"state":"Cross-River","capital":"Calaber" },
+    {"state":"Delta","capital":"Asaba" },
+    {"state":"Ebonyi","capital":"Abakaliki" },
+    {"state":"Edo","capital":"Benin" },
+    {"state":"Ekiti","capital":"Ado-Ekiti" },
+    {"state":"Enugu","capital":"Enugu" }, 
+    {"state":"Gombe","capital":"Gombe" },
+    {"state":"Imo","capital":"Owerri" },
+    {"state":"Jigawa","capital":"Dutse" },
+    {"state":"Kaduna","capital":"Kaduna" },
+    {"state":"Kano","capital":"Kano" },
+    {"state":"katsina","capital":"Kastina" },
+    {"state":"kebbi","capital":"Kebbi" },
+    {"state":"Kogi","capital":"lokoja" },
+    {"state":"kwara","capital":"Ilorin" },
+    {"state":"Lagos","capital":"Ikeja" },
+    {"state":"Nassarawa","capital":"Lafia" },
+    {"state":"Niger","capital":"Minna" },
+    {"state":"Ogun","capital":"Abeokuta" },
+    {"state":"Ondo","capital":"Akure" },
+    {"state":"Osun","capital":"Oshogbo" },
+    {"state":"Oyo","capital":"Ibadan" },
+    {"state":"Plateau","capital":"Jos" },
+        {"state":"Rivers","capital":"Port Harcourt" },
+    {"state":"Sokoto","capital":"Sokoto" },
+    {"state":"Taraba","capital":"Jalingo" },
+    {"state":"Yobe","capital":"Damaturu" },
+    {"state":"Zamfara","capital":"Gusau" },
+    {"state":"FCT","capital":"Abuja" }];
+    
+    
+    var table = document.querySelector("#T");
+    for (i=0;i<SC.length;i++){
+      var row = table.insertRow(i);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      var cell3 = row.insertCell(2);
+      cell1.innerHTML = [i+1];
+      cell2.innerHTML = SC[i].state;
+      cell3.innerHTML = SC[i].capital;
+     
+    }
+    
+      </script>
+    
+      
+   
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>
